@@ -1,0 +1,249 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Oli Sharp} \\ \vspace{1pt}
+    \small \href{mailto:oli.sharp@outlook.com}{\underline{email}} $|$ 
+    \href{https://www.linkedin.com/in/oli-sharp-9394aa2ab/}{\underline{linkedin}} $|$
+    \href{https://github.com/oli-cs}{\underline{github}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Nottingham}{Nottingham, United Kingdom}
+      {Bachelor of Science in Computer Science}{Sept. 2023 -- June 2026}
+    \resumeSubheading
+      {The West Bridgford School}{Nottingham, United Kingdom}
+      {A-Levels - AAB in computer science, maths, and physics respectively}{Sept. 2020 -- June 2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    \resumeSubheading
+      {IT Service Desk Smart Bar Assistant}{Sept 2024 -- Present}
+      {University of Nottingham}{Nottingham, United Kingdom}
+      \resumeItemListStart
+        \resumeItem{Troubleshot various issues including wifi problems, account activation and registration issues, lost/broken MFA devices, etc.}
+        \resumeItem{Escalated issues that required higher privileges, i.e. those that required a password reset for resolution, to the second line service desk}
+        \resumeItem{Loaned out temporary laptops and booked in laptops for repair as part of the Laptop Loan and Repair service}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Information Technology Support Technician}{Jan. 2023 -- Sept. 2024}
+      {AST Language Services Ltd}{Nottingham, United Kingdom}
+      \resumeItemListStart
+        \resumeItem{Set up an add-on for a CRM and instructed team members in its use}
+        \resumeItem{Wrote a python script that utilised an open source LLM to estimate the quality of translations}
+        \resumeItem{Troubleshot colleagues' computer problems, including email access issues and microsoft office issues}
+        \resumeItem{Used DotPeek to recover lost source code from binaries}
+        \resumeItem{Wrote an intranet system from scratch}
+        \resumeItem{Troubleshot and optimised company websites using online SEO tools}
+        \resumeItem{Was presented with an employee recognition award for my work}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        
+        \resumeProjectHeading{\textbf{Second Year Group Project} $|$ \emph{Git, Gitlab}}{October 2024 - Present}
+          \resumeItemListStart
+            \resumeItem{Configured GitLab repository and CI/CD server using GitLab Runner as Git Lead}
+           
+          \resumeItemListEnd
+          
+        \resumeProjectHeading{\textbf{Portfolio Website} $|$ \emph{Git, Astro}}{May 2024 - Present}
+          \resumeItemListStart
+            \resumeItem{Developing a website to provide easy access to my open source projects}
+            \resumeItem{\href{https://oli-cs.github.io}{\underline{Visit the website}}}
+           
+          \resumeItemListEnd
+
+        \resumeProjectHeading{\textbf{Hackathons Info Bot} $|$ \emph{Git, Python, Discord API}}{June 2024}
+          \resumeItemListStart
+            \resumeItem{Discord bot which scrapes Hackathons UK and returns a list of hackathons happening in a given hackathon season}
+            \resumeItem{\href{https://github.com/oli-cs/hackathons-info-bot}{\underline{Git repository}}}
+           
+          \resumeItemListEnd  
+        
+        \resumeProjectHeading{\textbf{HouseLink} $|$ \emph{Python, SQLite, Git}}{March 2024}
+          \resumeItemListStart
+            \resumeItem{Developed an estate agent app for HackTheBurgh X, a closed entry 24-hour hackathon}
+            \resumeItem{\href{https://devpost.com/software/housetinder}{\underline{Devpost}}}
+           
+          \resumeItemListEnd
+
+        \resumeProjectHeading{\textbf{Mansion Escape} $|$ \emph{Git, Python, Markdown, Taipy}}{Jan. 2024}
+          \resumeItemListStart
+            \resumeItem{Developed an escape room game for Hackaway v7, a 24-hour hackathon}
+            \resumeItem{\href{https://devpost.com/software/mansion-escape}{\underline{Devpost}}}
+           
+          \resumeItemListEnd
+
+        \resumeProjectHeading{\textbf{Train Booking Emulator} $|$ \emph{Git, Javascript, HTML/CSS}}{Jan. 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a train booking emulator for a friend in 3 hours}
+            \resumeItem{\href{https://github.com/oli-cs/train-booking-emulator}{\underline{Git repository}}}
+           
+          \resumeItemListEnd  
+
+        \resumeProjectHeading{\textbf{Massive Machine Retro Revelry} $|$ \emph{Git, Python}}{Nov. 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a game consisting of a bash-terminal-style UI and several mini-games for HackNotts '84, a 24-hour hackathon}
+            \resumeItem{This was my teams first hackathon, and we were awarded the Retro Prize by the \href{https://www.tnmoc.org/}{\underline{National Museum of Computing}}}
+            \resumeItem{\href{https://devpost.com/software/massive-machine-retro-revelry}{\underline{Devpost}}}
+           
+          \resumeItemListEnd
+        
+        \resumeProjectHeading
+          {\textbf{Mock Exam Timetabling System} $|$ \emph{Python, JavaScript, HTML/CSS}}{Jan. 2021 -- Jan. 2022}
+          \resumeItemListStart
+            \resumeItem{Developed an app which finds the optimal arrangement of exams in a given time period to minimise the number of people sitting multiple exams at once}
+            \resumeItem{I developed this as part of my A-Level in computer science, and it scored 67/70}
+            \resumeItem{\href{https://github.com/oli-cs/MockExamTimetablingSystem}{\underline{Git repository}}}
+            
+          \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C, SQL (SQLite, Postgres), Haskell, ARM, HDL, JavaScript, HTML/CSS, Markdown} \\
+     \textbf{Frameworks}{: JUnit, Taipy, Astro, GitHub Pages, Discord API} \\
+     \textbf{Developer Tools}{: Git, VS Code, DotPeek, IntelliJ, Eclipse, GitLab Runner} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
