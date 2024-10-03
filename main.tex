@@ -29,8 +29,8 @@
 % \usepackage[default]{sourcesanspro}
 
 % serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
+ \usepackage{CormorantGaramond}
+ \usepackage{charter}
 
 
 \pagestyle{fancy}
@@ -66,6 +66,17 @@
   \item\small{
     {#1 \vspace{-2pt}}
   }
+}
+
+\newcommand{\module}[2]{
+  \item\small{
+    
+     \begin{tabular*}{0.9\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small#2} \\
+    \end{tabular*}
+
+  }
+  
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -114,7 +125,7 @@
 \begin{center}
     \textbf{\Huge \scshape Oli Sharp} \\ \vspace{1pt}
     \small \href{mailto:oli.sharp@outlook.com}{\underline{email}} $|$ 
-    \href{https://www.linkedin.com/in/oli-sharp-9394aa2ab/}{\underline{linkedin}} $|$
+    \href{https://www.linkedin.com/in/oli-sharp/}{\underline{linkedin}} $|$
     \href{https://github.com/oli-cs}{\underline{github}}
 \end{center}
 
@@ -125,9 +136,21 @@
     \resumeSubheading
       {University of Nottingham}{Nottingham, United Kingdom}
       {Bachelor of Science in Computer Science}{Sept. 2023 -- June 2026}
+      \resumeSubHeadingListStart
+        \module{Computer Fundamentals}{92\%}
+        \module{Programming and Algorithms}{79\%}
+        \module{Systems and Architecture}{79\%}
+        \module{Intro to Software Engineering}{79\%}
+        \module{etc}{}
+      \resumeSubHeadingListEnd
     \resumeSubheading
       {The West Bridgford School}{Nottingham, United Kingdom}
-      {A-Levels - AAB in computer science, maths, and physics respectively}{Sept. 2020 -- June 2022}
+      {A-Levels}{Sept. 2020 -- June 2022}
+      \resumeSubHeadingListStart
+        \module{Computer Science}{A}
+        \module{Maths}{A}
+        \module{Physics}{B}
+      \resumeSubHeadingListEnd
   \resumeSubHeadingListEnd
 
 
@@ -154,14 +177,14 @@
       \resumeItemListEnd
       
     \resumeSubheading
-      {Information Technology Support Technician}{Jan. 2023 -- Sept. 2024}
+      {IT Support Technician}{Jan. 2023 -- Sept. 2024}
       {AST Language Services Ltd}{Nottingham, United Kingdom}
       \resumeItemListStart
-        \resumeItem{Set up an add-on for a CRM and instructed team members in its use}
+        \resumeItem{Wrote an intranet system from scratch using HTML, CSS, and JavaScript}
         \resumeItem{Wrote a python script that utilised an open source LLM to estimate the quality of translations}
+        \resumeItem{Set up an add-on for a CRM and instructed team members in its use}
         \resumeItem{Troubleshot colleagues' computer problems, including email access issues and microsoft office issues}
         \resumeItem{Used DotPeek to recover lost source code from binaries}
-        \resumeItem{Wrote an intranet system from scratch}
         \resumeItem{Troubleshot and optimised company websites using online SEO tools}
         \resumeItem{Was presented with an employee recognition award for my work}
       \resumeItemListEnd
@@ -173,22 +196,24 @@
 \section{Projects}
     \resumeSubHeadingListStart
         
-        \resumeProjectHeading{\textbf{Second Year Group Project} $|$ \emph{Git, Gitlab}}{October 2024 - Present}
+        \resumeProjectHeading{\textbf{Second Year Group Project} $|$ Git Lead $|$ \emph{Git, GitLab}}{October 2024 - Present}
           \resumeItemListStart
-            \resumeItem{Configured GitLab repository and CI/CD server using GitLab Runner as Git Lead}
+            \resumeItem{Configured GitLab repository and CI/CD server using a Raspberry Pi and GitLab Runner}
+            \resumeItem{Configured GitLab notification integrations for Microsoft Teams and Discord}
            
           \resumeItemListEnd
           
         \resumeProjectHeading{\textbf{Portfolio Website} $|$ \emph{Git, Astro}}{May 2024 - Present}
           \resumeItemListStart
             \resumeItem{Developing a website to provide easy access to my open source projects}
+            \resumeItem{This allowed me to learn about static site generators, and using GitHub Pages to host a website}
             \resumeItem{\href{https://oli-cs.github.io}{\underline{Visit the website}}}
            
           \resumeItemListEnd
 
         \resumeProjectHeading{\textbf{Hackathons Info Bot} $|$ \emph{Git, Python, Discord API}}{June 2024}
           \resumeItemListStart
-            \resumeItem{Discord bot which scrapes Hackathons UK and returns a list of hackathons happening in a given hackathon season}
+            \resumeItem{Python script which scrapes Hackathons UK and formats the data into a list of hackathons happening in a given hackathon season. It then publishes the result to a discord bot via an API}
             \resumeItem{\href{https://github.com/oli-cs/hackathons-info-bot}{\underline{Git repository}}}
            
           \resumeItemListEnd  
@@ -196,13 +221,16 @@
         \resumeProjectHeading{\textbf{HouseLink} $|$ \emph{Python, SQLite, Git}}{March 2024}
           \resumeItemListStart
             \resumeItem{Developed an estate agent app for HackTheBurgh X, a closed entry 24-hour hackathon}
+            \resumeItem{By utilising an SQLite database, Tkinter frontend, and Python backend we were able to develop an app which allows you to swipe right to like or left to dislike a given house}
+            \resumeItem{I was in charge of designing the algorithm to determine the house to recommend next, which calculated the means and scaled standard deviations for each metric that the house could be judged on. It worked out the field that had the lowest variance, assumed that that was the field that the user was basing their decisions on, and showed houses where the value of that field was closest to the mean first}
             \resumeItem{\href{https://devpost.com/software/housetinder}{\underline{Devpost}}}
            
           \resumeItemListEnd
 
         \resumeProjectHeading{\textbf{Mansion Escape} $|$ \emph{Git, Python, Markdown, Taipy}}{Jan. 2024}
           \resumeItemListStart
-            \resumeItem{Developed an escape room game for Hackaway v7, a 24-hour hackathon}
+            \resumeItem{Reimagined a data visualisation library to develop an escape room game for Hackaway v7, a 24-hour hackathon}
+            \resumeItem{We had to identify elements of the library which the user could interact with, and then repurpose them for use in self-designed puzzles}
             \resumeItem{\href{https://devpost.com/software/mansion-escape}{\underline{Devpost}}}
            
           \resumeItemListEnd
@@ -217,6 +245,7 @@
         \resumeProjectHeading{\textbf{Massive Machine Retro Revelry} $|$ \emph{Git, Python}}{Nov. 2023}
           \resumeItemListStart
             \resumeItem{Developed a game consisting of a bash-terminal-style UI and several mini-games for HackNotts '84, a 24-hour hackathon}
+            \resumeItem{I co-developed a battleships game, along with a simulated linux file system, and a mail app}
             \resumeItem{This was my teams first hackathon, and we were awarded the Retro Prize by the \href{https://www.tnmoc.org/}{\underline{National Museum of Computing}}}
             \resumeItem{\href{https://devpost.com/software/massive-machine-retro-revelry}{\underline{Devpost}}}
            
@@ -225,8 +254,9 @@
         \resumeProjectHeading
           {\textbf{Mock Exam Timetabling System} $|$ \emph{Python, JavaScript, HTML/CSS}}{Jan. 2021 -- Jan. 2022}
           \resumeItemListStart
-            \resumeItem{Developed an app which finds the optimal arrangement of exams in a given time period to minimise the number of people sitting multiple exams at once}
-            \resumeItem{I developed this as part of my A-Level in computer science, and it scored 67/70}
+            \resumeItem{Developed an app for the West Bridgford School which finds the optimal arrangement of exams in a given time period to minimise the number of people sitting multiple exams at once}
+            \resumeItem{I developed this as part of my A-Level in computer science, it scored 67/70}
+            \resumeItem{To complete this project I had to overcome the challenges of learning a new language (JavaScript) and learning how to program for client-server architecture, neither of which I had done before}
             \resumeItem{\href{https://github.com/oli-cs/MockExamTimetablingSystem}{\underline{Git repository}}}
             
           \resumeItemListEnd
@@ -238,7 +268,7 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Java, Python, C, SQL (SQLite, Postgres), Haskell, ARM, HDL, JavaScript, HTML/CSS, Markdown} \\
+     \textbf{Languages}{: Java, Python, C (ANSI C/C89), SQL (SQLite, Postgres), Haskell, ARM Assembly, HDL, JavaScript, HTML/CSS, Markdown} \\
      \textbf{Frameworks}{: JUnit, Taipy, Astro, GitHub Pages, Discord API} \\
      \textbf{Developer Tools}{: Git, VS Code, DotPeek, IntelliJ, Eclipse, GitLab Runner} \\
     }}
